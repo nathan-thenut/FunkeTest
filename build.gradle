@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    // Need this to get vim-syntastic working with gradle
     id "com.scuilion.syntastic" version "0.3.8"
 }
 

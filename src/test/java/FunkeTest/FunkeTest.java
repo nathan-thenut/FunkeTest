@@ -42,7 +42,7 @@ public class FunkeTest {
 
                 String html = getHTMLFromUrl(url);
                 Document doc = Jsoup.parse(html);
-                //p-Tag check is not working ccorrectly. The regular expression
+                //p-Tag check is not working correctly. The regular expression
                 //is probably not correct.
                 assertTrue("Number of opening and closing p-Tags does not match", checkMatchingPTags(html, doc));
                 assertTrue("There should only be only one h1 tag at most.", checkAmountOfH1Tags(doc));
